@@ -1,0 +1,496 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: "Montserrat-Light";
+}
+li{
+	list-style-type: none;
+}
+p{
+	color: rgb(44, 44, 44);
+}
+@font-face{
+	font-family: "Montserrat";
+	src: url ("../fonts/Montserrat-Bold.ttf");
+	font-weight: 800;
+}
+@font-face{
+	font-family: "Montserrat-Light";
+	src: url ("../fonts/Montserrat-Light.ttf");
+}
+header{
+	background-image: url(../images/header-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+	height: 80vh;
+	width: 100%;
+	display: grid;
+	align-items: center;
+    grid-template-rows: 20vh 80vh;
+}
+.navegator{
+	display: grid;
+	grid-template-columns: 30% 50% 20%;
+	align-items: center;
+}
+.logo{
+	grid-row: 1;
+    grid-column: 1;
+	margin-left: 30%;
+}
+.logo img{
+	width: 60%;
+}
+div.navigate ul{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	width: 70%;
+	align-items: center;
+	color: white;
+	font-size: 18px;
+}
+div.button1{
+	position: absolute;
+	right: 0;
+	margin-right: 10%;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	border: 2px solid;
+	padding: 8px 20px 8px 20px;
+	cursor: pointer;
+}
+h1{
+	font-family: "Montserrat";
+	color: white;
+	font-size: 45px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20%;
+}
+#pluse{
+	display: grid;
+	height: 50vh;
+	width: 80%;
+	padding: 0% 10% 0% 10%;
+
+}
+#pluse ul{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+}
+#pluse ul li{
+	width: 90%;
+}
+#pluse ul li.center{
+	border-left: 1px solid #a8a8a8;
+	border-right: 1px solid #a8a8a8; 
+	padding: 10px 20px;
+}
+#pluse ul p.title{
+	font-size: 36px;
+	color: rgb(175, 149, 124);
+	font-weight: bold;
+	padding: 5%;
+}
+#pluse ul p{
+	font-size: 18px;
+}
+#pluse ul img{
+	width: 20%;
+	height: 20%;
+}
+h2{
+	font-size: 42px;
+	color: rgb(175, 149, 124);
+	padding: 10vh 0vh 6vh 0vh;
+}
+#theory{
+	position: relative;
+	display: grid;
+	background: #e6e6e6;
+	width: 65%;
+	height: 90vh;
+	padding: 0% 25% 0% 10%;
+}
+#theory .button{
+	position: absolute;
+	right: 0;
+	margin-right: 10%;
+	top: 70px;
+	font-size: 18px;
+	color: rgb(175, 149, 124);
+	text-align: center;
+	border: 2px solid;
+	padding: 8px 20px 8px 20px;
+	cursor: pointer;
+}
+.button p{
+	color: rgb(175, 149, 124);
+}
+h3{
+	display: block;
+	font-size: 28px;
+	font-weight: bold;
+}
+p.source{
+	font-size: 18px;
+	font-style: italic;
+}
+.source a{
+	color: rgb(175, 149, 124);
+}
+#theory img{
+	border-radius: 5px;
+}
+#theory nav{
+	display: flex;
+	padding-bottom: 2vh;
+}
+nav p{
+	margin-top: 9px;
+	margin-left: 5px;
+}
+#theory .text2{
+	display: flex;
+}
+.text2 p{
+	margin-left: 5vh;
+	font-size: 20px;
+}
+.color{
+	padding-bottom: 10vh;
+}
+.house{
+	padding-bottom: 10vh;
+}
+#reviews{
+	display: grid;
+	position: relative;
+	width: 80%;
+	height: 50vh;
+	padding: 0% 10% 3% 10%;
+	
+}
+#reviews .button{
+	position: absolute;
+	right: 0;
+	margin-right: 10%;
+	top: 70px;
+	font-size: 18px;
+	color: rgb(175, 149, 124);
+	text-align: center;
+	border: 2px solid;
+	padding: 8px 20px 8px 20px;
+	cursor: pointer;
+}
+#reviews .reviews{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	height: 15vh;
+}
+#reviews p{
+	font-size: 20px;
+}
+.text3{
+	border-left: 3px solid rgb(175, 149, 124);
+	padding: 0% 8% 0% 8%;
+}
+.text3 .p2{
+	font-weight: bold;
+	font-style: italic;
+	padding-top: 3vh;
+}
+#products{
+	display: grid;
+	position: relative;
+	width: 80%;
+	padding: 0% 10% 3% 10%;
+	height: 80vh;
+	background: #e6e6e6;
+}
+#products .button{
+	position: absolute;
+	right: 0;
+	margin-right: 10%;
+	top: 70px;
+	font-size: 18px;
+	color: rgb(175, 149, 124);
+	text-align: center;
+	border: 2px solid;
+	padding: 8px 20px 8px 20px;
+	cursor: pointer;
+}
+#products ul{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	align-items: center;
+	justify-items: center;
+	column-gap: 80px;
+}
+#products ul li{
+	height: 50vh;
+	width: 100%;
+	border: 1px solid;
+	color: #a8a8a8;
+}
+.text4 .nav1 p{
+	font-weight: bold;
+}
+.nav1{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.text4 .nav1{
+	display: flex;
+	margin-left: 20px;
+}
+.text4 .nav1 .price{
+	margin-left: auto;
+	margin-right: 20px;
+}
+.nav2{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap:  10px;
+	margin: 20px;
+	margin-top: 8%;
+}
+.nav2 p{
+	border: none;
+	background-color: rgb(175, 149, 124);
+	text-align: center;
+	color: white;
+	padding: 10px 10px 10px 10px;
+	border-radius: 2px;
+}
+#services{
+	display: grid;
+	width: 80%;
+	padding: 0% 10% 5% 10%;
+	height: 60vh;
+	background: #e6e6e6;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+	padding: 25px;
+	font-size: 20px;
+}
+table th{
+	display: table-cell;
+}
+th, td{
+	font-weight: normal;
+	text-align: left;
+	padding: 10px;
+}
+th.s1{
+	width: 5%;
+	text-align: center;
+}
+th .s2{
+	width: 35%;
+}
+th .s3{
+	width: 30%;
+}
+th .s4{
+	width: 10%;
+}
+td{
+	border: 1px solid #a8a8a8;
+ }
+ td.number{
+	text-align: center;
+ }
+td.services{
+	font-weight: bold;
+}
+#questions{
+	display: grid;
+	position: relative;
+	width: 80%;
+	padding: 0% 10% 0% 10%;
+	height: 130vh;
+}
+#questions .inscription{
+	position: absolute;
+	right: 0;
+	margin-right: 10%;
+	top: 90px;
+	font-size: 18px;
+}
+#questions .a{
+	display: grid;
+	grid-template-columns: 65% 35%;
+	height: 80vh;
+	margin-top: 2%;
+	column-gap: 6%;
+}
+.a img{
+	border-radius: 8px;
+	height: 85%;
+}
+#questions .b label{
+	font-size: 18px;
+	color: #303030;
+	margin: 10px;
+}
+#questions .b input{
+	height: 30px;
+	padding: 10px 15px;
+	margin: 10px 0px 20px 0px;
+	border: 1px solid #a8a8a8;
+}
+#questions .name input{
+	width: 100%;
+}
+input[type="text"]{
+	font-size: 18px;
+}
+#questions .contacts{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 10%;
+}
+#questions .contacts .phone input{
+	width: 100%;
+}
+#questions .contacts .mail input{
+	width: 100%;
+}
+input[type="email"]{
+	font-size: 18px;
+}
+.checkbox{
+	width: 100%;
+	border-bottom: 1px solid #a8a8a8;
+}
+.checkbox input{
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+}
+/*
+input[type='checkbox']{
+	-webkit-appearance: none;
+	appearance: none;
+	position: absolute;
+}
+.checkbox{
+	position: relative;
+}*/
+#questions .select{
+	width: 100%;
+	height: 40px;
+	margin: 10px 0px 30px 0px;
+}
+#questions .select select{
+	width: 100%;
+	height: 40px;
+	padding: 10px 15px;
+	margin: 10px 0px 30px 0px;
+	border: 1px solid #a8a8a8;
+}
+#questions .select select option{
+	width: 100%;
+	height: 40px;
+	padding: 10px 15px;
+}
+#questions .text label{
+	padding: 10px 0px 30px 0px;
+}
+#questions .text textarea{
+	width: 100%;
+	max-height: 100%;
+	font-size: 18px;
+	padding: 15px 15px;
+	margin: 10px 0px 30px 0px;
+	border: 1px solid #a8a8a8;
+}
+#questions input.sand{
+	width: 150px;
+	height: auto;
+	border: none;
+	font-size: 20px;
+	background-color: rgb(175, 149, 124);
+	text-align: center;
+	color: white;
+	padding: 10px 10px 10px 10px;
+	border-radius: 2px;
+	margin-bottom: 80px;
+}
+footer{
+	display: grid;
+	width: 80%;
+	height: 70vh;
+	padding: 0% 10% 0% 10%;
+	background-color: rgb(44, 41, 36);
+}
+footer .logo1{
+	height: 20vh;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	align-items: center;
+	border-bottom: 1px solid rgb(88, 83, 73);
+}
+footer .logo1 .button{
+	margin-left: auto;
+	width: auto;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	border: 2px solid;
+	padding: 8px 20px 8px 20px;
+	cursor: pointer;
+}
+footer .all{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	width: 50%;
+	line-height: 40px;
+	grid-column: 30px;
+}
+footer ul h3{
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(175, 149, 124);
+}
+footer ul li{
+	font-size: 16px;
+	color: #e6e6e6;
+}
+footer .be_frieds{
+	width: 100%;
+/*
+	display: grid;
+	height: 8vh;
+	align-items: center;
+*/
+	border-top: 1px solid rgb(88, 83, 73);
+}
+footer .be_frieds p{
+	margin-top: 4%;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+	color: rgb(175, 149, 124);
+}
+
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+header>section nav{
+	width: 60%;
+}
